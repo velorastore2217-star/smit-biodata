@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=850" />
+    <title>Marriage Biodata - Exact Match</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #d1d1d1;
+        font-family: "Roboto", sans-serif;
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+        margin: 0;
+        /* This prevents the mobile browser from trying to 'help' with font sizes */
+        -webkit-text-size-adjust: 100%;
+      }
+
+      /* The Main Card - Fixed width so it never breaks layout */
+      .biodata-card {
+        width: 850px;
+        min-width: 850px; /* Forces it to stay wide on mobile */
+        background-color: white;
+        display: flex;
+        position: relative;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        min-height: 1100px;
+      }
+
+      .sidebar {
+        width: 350px;
+        background-color: #e3e6d5;
+        padding: 40px;
+        z-index: 1;
+      }
+
+      .main-content {
+        flex: 1;
+        background-color: #ffffff;
+        padding: 40px;
+        z-index: 1;
+      }
+
+      .top-shape {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 65%;
+        height: 220px;
+        background-color: #a3ad97;
+        border-top-right-radius: 110px;
+        border-bottom-right-radius: 110px;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        padding-left: 60px;
+      }
+
+      .name-header {
+        color: white;
+        font-size: 52px;
+        font-weight: 700;
+        line-height: 1.1;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+      .profile-circle {
+        position: absolute;
+        right: 50px;
+        top: 40px;
+        width: 300px;
+        height: 300px;
+        background: white;
+        border-radius: 50%;
+        padding: 10px;
+        z-index: 3;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+      }
+
+      .profile-circle img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      h2 {
+        font-size: 22px;
+        color: #333;
+        text-transform: uppercase;
+        border-bottom: 2px solid #333;
+        display: inline-block;
+        margin: 40px 0 20px 0;
+        letter-spacing: 1px;
+      }
+
+      .info-row {
+        display: flex;
+        margin-bottom: 12px;
+        font-size: 16px;
+      }
+
+      .label {
+        font-weight: 700;
+        width: 130px;
+        color: #444;
+      }
+
+      .value {
+        flex: 1;
+        color: #555;
+      }
+
+      .ring-decor {
+        position: absolute;
+        border: 6px double rgba(163, 173, 151, 0.3);
+        border-radius: 50%;
+        pointer-events: none;
+      }
+      .ring-1 {
+        width: 220px;
+        height: 220px;
+        top: -40px;
+        left: -40px;
+      }
+      .ring-2 {
+        width: 280px;
+        height: 280px;
+        bottom: 60px;
+        right: -80px;
+      }
+
+      .spacer {
+        height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="biodata-card">
+      <div class="ring-decor ring-1"></div>
+      <div class="ring-decor ring-2"></div>
+
+      <div class="top-shape">
+        <div class="name-header">SMIT<br />SHIYANI</div>
+      </div>
+
+      <div class="profile-circle">
+        <img src="./smit.jpeg" alt="Profile" />
+      </div>
+
+      <div class="sidebar">
+        <div class="spacer"></div>
+
+        <h2>PERSONAL DETAILS</h2>
+        <div class="info-row">
+          <div class="label">Date Of Birth :</div>
+          <div class="value">19-11-2004</div>
+        </div>
+        <div class="info-row">
+          <div class="label">Height :</div>
+          <div class="value">5.2</div>
+        </div>
+        <div class="info-row">
+          <div class="label">Weight :</div>
+          <div class="value">65</div>
+        </div>
+        <div class="info-row">
+          <div class="label">Religion :</div>
+          <div class="value">Hindu Leuva Patel</div>
+        </div>
+        <div class="info-row">
+          <div class="label">Native Place :</div>
+          <div class="value">Vandaliya</div>
+        </div>
+        <div class="info-row">
+          <div class="label">District :</div>
+          <div class="value">Amreli</div>
+        </div>
+        <div class="info-row">
+          <div class="label">Blood Group :</div>
+          <div class="value">B+</div>
+        </div>
+        <div class="info-row">
+          <div class="label">Address :</div>
+          <div class="value">
+            I-204 Angan Residency, yogichowk, puna gam<br />Surat, Gujarat,
+            305010
+          </div>
+        </div>
+
+        <h2>HOBBIES</h2>
+        <div class="info-row">
+          <div class="label">Hobbies :</div>
+          <div class="value">Reading, Singing</div>
+        </div>
+        <div class="info-row">
+          <div class="label">Interests :</div>
+          <div class="value">Traveling, Photography</div>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <div class="spacer"></div>
+
+        <h2>FAMILY DETAILS</h2>
+        <div class="info-row">
+          <div class="label">Father's Name :</div>
+          <div class="value">Vipulbhai Kanubhai Shiyani</div>
+        </div>
+        <div class="info-row">
+          <div class="label">Father's Job :</div>
+          <div class="value">Plastic Business</div>
+        </div>
+        <div class="info-row">
+          <div class="label">Mobile No :</div>
+          <div class="value">8000060653</div>
+        </div>
+        <div class="info-row">
+          <div class="label">Mother's Name :</div>
+          <div class="value">Bhartiben Vipulbhai Shiyani</div>
+        </div>
+        <div class="info-row">
+          <div class="label">Mother's Job :</div>
+          <div class="value">House Wife</div>
+        </div>
+        <div class="info-row">
+          <div class="label">Siblings :</div>
+          <div class="value">Khushi (Unmarried) - (Jewelary Designer)</div>
+        </div>
+
+        <h2>EDUCATION</h2>
+        <div class="info-row">
+          <div class="label">Education :</div>
+          <div class="value">BTech - (Mechanical Engineering)</div>
+        </div>
+        <div class="info-row">
+          <div class="label">Profession :</div>
+          <div class="value">Steel</div>
+        </div>
+        <div class="info-row">
+          <div class="label">College :</div>
+          <div class="value">Sarvajanik College of Engineering & Technology</div>
+        </div>
+        <div class="info-row">
+          <div class="label">High School :</div>
+          <div class="value">Kaushal Vidyabhavan (2022)</div>
+        </div>
+
+        <h2>MATERNAL DETAILS</h2>
+        <div class="info-row">
+          <div class="label">Mama's Name :</div>
+          <div class="value">Mansukhbhai Goganbhai Sakariya</div>
+        </div>
+        <div class="info-row">
+          <div class="label">Native Place :</div>
+          <div class="value">Thorkhan</div>
+        </div>
+        <div class="info-row">
+          <div class="label">District :</div>
+          <div class="value">Amreli</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
